@@ -53,3 +53,8 @@ body{
   font-weight: 300;
   font-style: normal;
 }
+.main-outlet{
+  min-height: 100vh;
+  background: #FFFFFF;
+  padding: 30px 170px;
+}

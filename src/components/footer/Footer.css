@@ -1,0 +1,12 @@
+.footer{
+    background:#808080;
+    color: #F0FFF0;
+}
+.footer-info{
+    background: transparent;
+    padding: 30px 170px;
+}
+.footer-metadata{
+    background: #708090;
+    padding: 15px 170px;
+}

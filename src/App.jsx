@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
 
-      <div>
+      <div className='main-outlet'>
         <Outlet />
       </div>
 
