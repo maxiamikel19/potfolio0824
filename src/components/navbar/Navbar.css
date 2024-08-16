@@ -1,20 +1,162 @@
 .navbar{
-    background: #F1F1F1;
+    background: #103F89;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 170px;
+    border:none;
+    width: 100%;
 }
-.navbar ul{
+.logo-title{
     display: flex;
-    list-style: none;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
 }
-.navbar ul li{
+.logo-title span{
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(260deg, red 0.18%, #FFF 102.10%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-menu {
     list-style:none;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    gap: 60px;
+    width: 80%;
 }
+.nav-menu ul li{
+    display: flex;
+    flex-direction: column;
+}
+ 
 ul li a{
-    color: #23272E;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
     text-decoration: none;
+    border: none;
+}
+.underlined-menu{
+    background: #B22222;
+    width: 100%;
+    height: 4px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 17px ;
+}
+.nav-mobil-close{
+    display: none;
+}
+.nav-mobil-open{
+    display: none;
+}
+
+@media(max-width:768px){
+    .navbar{
+        padding: 20px 40px;
+    }
+    .nav-mobil-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #FFF;
+    }
+    .nav-mobil-close{
+        display: block;
+        position: relative;
+        top: 13px;
+        left: 140px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #FFF;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        background: #103F89;
+        right: -350px;
+    }
+    .underlined-menu{
+        background: #F1F1F1;
+    }
+    .nav-menu ul li{
+        font-size: 20px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .logo-title span{
+        font-size: 14px;
+        font-weight: 500;
+        background: linear-gradient(260deg, #B22222 0.18%, #103F89 102.10%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@media(max-width:1024px){
+    .navbar{
+        padding: 20px 80px;
+    }
+    .nav-mobil-open{
+        display: block;
+        position: fixed;
+        right: 80px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-mobil-close{
+        display: block;
+        position: relative;
+        top: 13px;
+        left: 140px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        background: #103F89;
+        right: -350px;
+    }
+    .underlined-menu{
+        background: #F1F1F1;
+    }
+    .nav-menu ul li{
+        font-size: 20px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
